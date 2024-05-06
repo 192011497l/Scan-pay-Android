@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Scan"
+        tools:targetApi="31">
+        <activity
+            android:name=".viewhistory"
+            android:exported="false" />
+        <activity
+            android:name=".historydetails"
+            android:exported="false" />
+
+        <activity android:name=".ProfileActivity2"/>
+        <activity android:name=".EditProfileActivity2"/>
+        <activity android:name=".shops"></activity>
+
+        <activity
+            android:name=".adminpaymentdetails"
+            android:exported="false" />
+        <activity
+            android:name=".viewpayment"
+            android:exported="false" />
+        <activity
+            android:name=".adminviewpayment"
+            android:exported="false" />
+        <activity
+            android:name=".paymentdetails"
+            android:exported="false" />
+        <activity
+            android:name=".viewcart"
+            android:exported="false" />
+        <activity
+            android:name=".QRScanner"
+            android:exported="false" />
+        <activity
+            android:name=".viewoffer"
+            android:exported="false" />
+        <activity
+            android:name=".insertoffer"
+            android:exported="false" />
+        <activity
+            android:name=".custmerhome"
+            android:exported="false" />
+        <activity
+            android:name=".viewoffer2"
+            android:exported="false" />
+        <activity
+            android:name=".start"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".UserData"
+            android:exported="false" />
+        <activity
+            android:name=".usertype"
+            android:exported="false" />
+        <activity
+            android:name=".viewemp"
+            android:exported="false" />
+        <activity
+            android:name=".insertemp"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <data
+                    android:host="rzp.io"
+                    android:scheme="io.rzp" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="your_key_here" />
+        <activity
+            android:name=".CaptureAct"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme" />
+    </application>
+
+</manifest>

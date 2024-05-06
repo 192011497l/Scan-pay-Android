@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="18dp">
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Scan And Pay"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Content Boxes -->
+
+    <!-- Bottom Navigation Bar -->
+
+    <LinearLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="372dp"
+        android:layout_height="520dp"
+        android:layout_below="@id/welcomeMessage"
+        android:layout_marginTop="23dp"
+        android:orientation="vertical">
+
+        <!-- Content Box 1 -->
+        <TextView
+
+            android:id="@+id/btn_scanner"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/lawender_boarder"
+            android:gravity="center"
+            android:text="Scan Any QR Code"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <!-- Content Box 2 -->
+        <TextView
+            android:id="@+id/payments"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/lawender_boarder"
+            android:gravity="center"
+            android:text="My Payements"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <!-- Content Box 3 -->
+
+        <!-- Content Box 4 -->
+
+        <!-- Content Box 5 -->
+        <TextView
+            android:id="@+id/offersBox"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/lawender_boarder"
+            android:gravity="center"
+            android:text="Offers"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/historyBox"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/lawender_boarder"
+            android:gravity="center"
+            android:text="History"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/lawender_boarder"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/homeIcon"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:src="@drawable/baseline_home_24" />
+
+        <!-- Notifications Icon -->
+
+        <!-- Offers Icon -->
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="5dp"
+            android:src="@drawable/baseline_person_2_24" />
+
+        <ImageButton
+            android:id="@+id/cart"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:src="@drawable/baseline_shopping_cart_24" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/Logout"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="306dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:contentDescription="Logout Icon"
+        android:focusable="true"
+        android:padding="16dp"
+        android:src="@drawable/baseline_logout_24" />
+
+</RelativeLayout>

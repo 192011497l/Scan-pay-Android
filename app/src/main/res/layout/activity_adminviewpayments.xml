@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- AppBarLayout for the header -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Your header content goes here -->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Payment Details Title -->
+    <TextView
+        android:id="@+id/paymentDetailsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Details"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Table Layout for Payment Details -->
+    <TableLayout
+        android:id="@+id/itemDetailsTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/paymentDetailsTitle"
+        android:layout_marginTop="8dp">
+
+        <!-- Table Header -->
+        <TableRow
+            android:layout_width="341dp"
+            android:layout_height="353dp">
+
+            <TextView
+                android:id="@+id/itemNameTextView"
+                android:layout_width="103dp"
+                android:layout_height="46dp"
+                android:background="#f0f0f0"
+                android:padding="8dp"
+                android:text="Name"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/itemPriceTextView"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:background="#f0f0f0"
+                android:padding="8dp"
+                android:text="Quantity"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/itemQuantityTextView"
+                android:layout_width="77dp"
+                android:layout_height="match_parent"
+                android:background="#f0f0f0"
+                android:padding="8dp"
+                android:text="Price"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/totalpriceTextView"
+                android:layout_width="109dp"
+                android:layout_height="match_parent"
+                android:background="#f0f0f0"
+                android:padding="8dp"
+                android:text="TotalPrice"
+                android:textColor="@android:color/black" />
+        </TableRow>
+
+        <!-- Table Rows (Item Details) -->
+        <!-- These rows will be dynamically added based on database data -->
+
+    </TableLayout>
+
+    <!-- NestedScrollView for scrolling content -->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="360dp"
+        android:layout_height="314dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="24dp"
+        android:fillViewport="true"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemDetailsTable">
+
+        <!-- Linear layout to contain dynamically added item containers -->
+        <LinearLayout
+            android:id="@+id/coversContainer"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:orientation="vertical">
+
+
+            <!-- Dynamically added items go here -->
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/amountTextView"
+        android:layout_width="102dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="504dp"
+        android:text="Amount:"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <Button
+        android:id="@+id/CompleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="532dp"
+        android:backgroundTint="@color/lavender"
+        android:onClick="CompleteButton"
+        android:text="Complete"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <Button
+        android:id="@+id/saveButton2"
+        android:layout_width="356dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/lavender"
+        android:text="Payment Sucessful"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Payment Details Title -->
+
+    <!-- Bottom Navigation Bar -->
+    <!-- Add your bottom navigation bar here -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "367089643160",
+    "firebase_url": "https://venky-d4caa-default-rtdb.firebaseio.com",
+    "project_id": "venky-d4caa",
+    "storage_bucket": "venky-d4caa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367089643160:android:fdd411464df03133192aed",
+        "android_client_info": {
+          "package_name": "com.example.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNVPy7EqHAmQN1cG94Bi9Hx1xTiVBh0-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367089643160:android:691cd90496fdd3b0192aed",
+        "android_client_info": {
+          "package_name": "com.example.signupandloginrealtime"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNVPy7EqHAmQN1cG94Bi9Hx1xTiVBh0-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
